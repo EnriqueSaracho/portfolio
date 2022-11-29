@@ -32,3 +32,19 @@ ul {
 li {
     text-decoration: none;
 }
+
+h1 {
+    font-size: 90px;
+}
+
+.hero-text {
+    margin-left: 80px;
+}
+
+.button {
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+}
