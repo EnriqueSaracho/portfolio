@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 section {
   height: 500px;
   background-color: white;
@@ -16,35 +20,46 @@ footer {
   background-color: black;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 30px;
 }
 
 li {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    font-size: 90px;
+  font-size: 90px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .hero-text {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .button {
-    height: 60px;
-    width: 200px;
-    border-radius: 30px;
-    background-color: coral;
-    text-align: center;
+  height: 55px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: coral;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 5px;
+  margin-top: 20px;
 }
