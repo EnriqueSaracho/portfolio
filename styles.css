@@ -71,4 +71,10 @@ p {
   padding-top: 5px;
   margin-top: 20px;
 }
-
+.button:hover {
+  background-color: #ef744b;
+}
+.button:active {
+  background-color: #A9A9A9;
+  color: #808080;
+}
