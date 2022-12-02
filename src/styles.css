@@ -125,3 +125,13 @@ p {
   width: 300px;
   box-shadow: 5px 5px 20px rgb(198, 198, 198);
 }
+
+.project-image {
+  margin-top: 25px;
+  width: 200px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
