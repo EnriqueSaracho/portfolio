@@ -3,7 +3,6 @@ body {
 }
 
 section {
-  height: 500px;
   background-color: white;
   border: solid black 1px;
 }
@@ -78,9 +77,10 @@ p {
 }
 .button:hover {
   background-color: #ef744b;
+  cursor: pointer;
 }
 .button:active {
-  background-color: #A9A9A9;
+  background-color: #a9a9a9;
   color: #808080;
 }
 
@@ -99,6 +99,12 @@ p {
 }
 
 .headshot {
-  width: 500px;
+  height: 300px;
+  border-radius: 150px;
   object-fit: cover;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
 }
