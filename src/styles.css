@@ -100,4 +100,5 @@ p {
 
 .headshot {
   width: 500px;
+  object-fit: cover;
 }
