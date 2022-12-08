@@ -4,6 +4,40 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0 0 0 300px;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #1c1d25;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.19),  0 6px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+li {
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
   margin: 0;
 }
 
@@ -23,23 +57,6 @@ footer {
   color: white;
   text-align: center;
   padding: 80px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  width: 500px;
-  justify-content: space-around;
-  font-size: 30px;
-}
-
-li {
-  text-decoration: none;
 }
 
 h1 {
@@ -88,14 +105,6 @@ p {
 .button:active {
   background-color: #a9a9a9;
   color: #808080;
-}
-
-.socials {
-  padding-bottom: 80px;
-}
-
-.social {
-  margin: 20px;
 }
 
 .sub-section {
