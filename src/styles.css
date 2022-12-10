@@ -17,28 +17,58 @@ nav {
   box-shadow: 10px 10px 20px rgba(0,0,0,0.19),  0 6px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px;
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+}
+.nav-logo:hover {
+  color: black;
+  background-color: white;
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
   padding: 0;
   margin: 0;
   font-size: 30px;
+  width: 300px;
+}
+ul > hr {
+  margin: 0 20px;
 }
 
-li {
+li > a {
   text-decoration: none;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li > a:hover {
+  background-color: #202028;
+}
+li > a:active {
+  background-color: #14151a;
 }
 
 .socials {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .social {
-  margin: 0;
+  margin: 0 10px;
 }
 
 section {
