@@ -32,6 +32,11 @@ nav {
   color: black;
   background-color: white;
 }
+.nav-logo:active {
+  /* Need to put timers on activation */
+  color: blue;
+  background-color: white;
+}
 
 ul {
   display: flex;
@@ -207,7 +212,7 @@ a {
   outline: 0;
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .hamburger {
     display: block;
     border: 0;
@@ -233,4 +238,4 @@ a {
     flex-direction: column-reverse;
     background-color: #2b2c38;
   }
-}
+} */
