@@ -27,15 +27,16 @@ nav {
   color: white;
   margin-top: 30px;
   padding: 10px;
+  transition: 0.3s;
 }
 .nav-logo:hover {
   color: black;
   background-color: white;
 }
 .nav-logo:active {
-  /* Need to put timers on activation */
   color: blue;
   background-color: white;
+  transition: 0s;
 }
 
 ul {
@@ -59,6 +60,7 @@ li > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 li > a:hover {
   background-color: #202028;
