@@ -18,9 +18,10 @@
     ></script>
   </head>
   <body id="body">
-    <nav id="nav-bar">
-      <a href="#hero" class="nav-logo">Kiki</a>
-      <ul id="nav-list">
+    <!-- Primary Navigation Bar -->
+    <nav class="nav-bar" id="primary-nav-bar">
+      <a href="#hero" class="nav-logo" id="primary-nav-logo">Kiki</a>
+      <ul class="nav-list" id="primary-nav-list">
         <hr>
         <li><a href="#about-me">About me</a></li>
         <hr>
@@ -29,7 +30,7 @@
         <li><a href="#contact-me">Contact me</a></li>
         <hr>
       </ul>
-      <div class="socials">
+      <div class="socials" id="primary-class-socials">
         <div class="social">
           <a href="https://github.com/EnriqueSaracho" target="_blank">
             <svg
@@ -64,19 +65,24 @@
           </a>
         </div>
       </div>
-      <button class="hamburger" id="shortsc-hamburger">
+    </nav>
+    <!-- Primary Navigation Bar -->
+    <button class="hamburger" id="primary-hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Secondary Navigation Bar -->
+    <nav class="nav-bar" id="secondary-nav-bar">
+      <a href="#hero" class="nav-logo" id="secondary-nav-logo"></a>
+      <button class="hamburger" id="secondary-hamburger">
         <i class="fas fa-bars"></i>
       </button>
     </nav>
-    <button class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </button>
+    <!-- Secondary Navigation Bar -->
     <section class="hero" id="hero">
       <div class="hero-area">
         <div class="hero-text">
           <h1>Enrique Saracho</h1>
           <p>Computer Science Student</p>
-          <div class="button" disabled><a href="#about-me">About me</a></div>
         </div>
         <div class="socials">
           <div class="social">
