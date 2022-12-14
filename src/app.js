@@ -1,4 +1,4 @@
-const hamburgerButton = document.getElementById("hamburger");
+const primaryHamburgerButton = document.getElementById("primary-hamburger");
 const primaryNavBar = document.getElementById("primary-nav-bar");
 const body = document.getElementById("body");
 let flag = 0;
@@ -15,4 +15,4 @@ function toggleButton() {
   }
 }
 
-hamburgerButton.addEventListener("click", toggleButton);
+primaryHamburgerButton.addEventListener("click", toggleButton);

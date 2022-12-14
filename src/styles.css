@@ -14,10 +14,10 @@ body {
   transition: 0.3s;
 }
 
-/* Navigation bar */
+/* Navigation bars */
 .nav-bar {
   background-color: var(--dark-background-color);
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.19),  0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-logo {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 50px;
   color: white;
   margin-top: 30px;
@@ -56,7 +56,7 @@ body {
   transition: 0s;
 }
 
-ul {
+.nav-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -67,11 +67,11 @@ ul {
   font-size: 30px;
   width: 300px;
 }
-ul > hr {
+.nav-list > hr {
   margin: 0 20px;
 }
 
-li > a {
+.nav-list > li > a {
   text-decoration: none;
   height: 145px;
   display: flex;
@@ -79,10 +79,10 @@ li > a {
   justify-content: center;
   transition: 0.3s;
 }
-li > a:hover {
+.nav-list > li > a:hover {
   background-color: var(--dark-hover-color);
 }
-li > a:active {
+.nav-list > li > a:active {
   background-color: var(--dark-active-color);
 }
 
@@ -115,13 +115,11 @@ li > a:active {
 #primary-hamburger {
   position: fixed;
   z-index: 1;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.19),  0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 #secondary-hamburger {
-  display: none;
   width: 100vw;
-  height: 5vh;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -135,30 +133,28 @@ li > a:active {
   }
 
   #secondary-nav-bar {
-    display: block;
+    position: fixed;
+    height: 100vh;
+    display: flex;
   }
 
-  .nav-logo {
+  #primary-nav-logo {
     display: none;
   }
 
-  ul {
+  #primary-nav-list {
     display: none;
   }
 
-  .socials {
+  #primary-class-socials {
     display: none;
   }
 
   #primary-hamburger {
     display: none;
   }
-
-  #secondary-hamburger {
-    display: block;
-  }
 }
-/* Navigation Bar */
+/* Navigation Bars */
 
 section {
   background-color: white;
