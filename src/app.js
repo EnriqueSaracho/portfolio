@@ -20,12 +20,12 @@ function togglePrimaryButton() {
 
 function toggleSecondaryButton() {
   if(secondaryFlag == 0) {
-    secondaryNavBar.style.top = "-95vh";
-    body.style.marginTop = "5vh";
-    secondaryFlag = 1;
-  } else {
     secondaryNavBar.style.top = "0";
     body.style.marginTop = "0";
+    secondaryFlag = 1;
+  } else {
+    secondaryNavBar.style.top = "-93vh";
+    body.style.marginTop = "7vh";
     secondaryFlag = 0;
   }
 }
