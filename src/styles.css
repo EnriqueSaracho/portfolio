@@ -131,6 +131,10 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
   body {
     margin: 7vh 0 0 0!important;
     transition: 0s;
