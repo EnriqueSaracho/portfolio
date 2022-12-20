@@ -233,33 +233,14 @@ p {
   }
 }
 
-.button {
-  height: 55px;
-  width: 200px;
-  border-radius: 30px;
-  background-color: coral;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 300;
-  padding-top: 5px;
-  margin-top: 20px;
-  user-select: none;
-}
-.button:hover {
-  background-color: #ef744b;
-  cursor: pointer;
-}
-.button:active {
-  background-color: #a9a9a9;
-  color: #808080;
-}
-
+/* This part is for "about me" section */
 .sub-section {
   display: flex;
   justify-content: space-around;
   padding: 80px;
 }
 
+/* This part is for "projects" section */
 .sub-section-alternative {
   display: flex;
   flex-direction: column;
