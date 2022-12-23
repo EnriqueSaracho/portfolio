@@ -46,6 +46,7 @@ body {
   margin-top: 30px;
   padding: 10px;
   transition: 0.3s;
+  text-decoration: none;
 }
 .nav-logo:hover {
   color: black;
@@ -79,6 +80,7 @@ body {
 
 .nav-list > li > a {
   text-decoration: none;
+  color: white;
   height: 145px;
   display: flex;
   align-items: center;
@@ -132,12 +134,13 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
-  
+
   body {
-    margin: 7vh 0 0 0!important;
+    margin: 7vh 0 0 0 !important;
     transition: 0s;
   }
 
@@ -178,37 +181,12 @@ body {
 }
 /* Navigation Bars */
 
-section {
-  background-color: white;
-}
-
+/* Hero Section */
 .hero {
   height: 100vh;
-  background-color: #1c1d25;
+  background-color: var(--dark-background-color);
   color: white;
   font-size: 40px;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 80px;
-}
-
-h1 {
-  font-size: 90px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-p {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
 }
 
 .hero-area {
@@ -222,11 +200,22 @@ p {
   margin-bottom: 120px;
 }
 
+.hero-title {
+  font-size: 90px;
+  margin: 0;
+}
+
+.hero-subtext {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
 @media only screen and (max-width: 1000px) {
-  h1 {
+  .hero-title {
     font-size: 60px;
   }
-  p {
+  .hero-subtext {
     font-size: 20px;
   }
   .hero-area {
@@ -237,43 +226,23 @@ p {
     margin-bottom: 200px;
   }
 }
+/* Hero Section */
 
-/* This part is for "about me" section */
-.sub-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 80px;
-}
-
-/* This part is for "projects" section */
-.sub-section-alternative {
+/* Projects Section */
+.projects {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 80px;
 }
 
-.headshot {
-  height: 300px;
-  border-radius: 150px;
-  object-fit: cover;
-}
-
-.headshot-container {
-  display: flex;
-  align-items: center;
+.projects-title {
+  font-size: 50px;
 }
 
 .project-container {
   display: flex;
   justify-content: space-around;
-}
-
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .project-card {
@@ -287,7 +256,17 @@ p {
   width: 200px;
 }
 
-hr {
+.project-title {
+  font-size: 20px;
+}
+
+.project-subtext {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.project-card > hr {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -297,35 +276,17 @@ hr {
   color: #ef744b;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/* @media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    margin: 20;
-    align-self: flex-end;
-  }
-
-  ul {
-    display: none;
-    background-color: #2b2c38;
-    margin: 0;
-  }
-
-  ul.show {
-    display: block;
-  }
-
-  nav {
+@media only screen and (max-width: 1000px) {
+  .project-container {
     display: flex;
-    flex-direction: column-reverse;
-    background-color: #2b2c38;
+    flex-wrap: wrap;
   }
-} */
+}
+/* Projects Section */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
