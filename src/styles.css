@@ -233,7 +233,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 80px;
+  background-color: white;
+  margin: 80px;
+  border-radius: 25px;
 }
 
 .projects-title {
