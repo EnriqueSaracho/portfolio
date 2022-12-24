@@ -229,6 +229,10 @@ body {
 /* Hero Section */
 
 /* Projects Section */
+.projects-anchor {
+  display: block;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
