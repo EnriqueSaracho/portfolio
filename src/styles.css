@@ -229,7 +229,7 @@ body {
 /* Hero Section */
 
 /* Projects Section */
-.projects-anchor {
+#projects-anchor {
   display: block;
 }
 
@@ -239,7 +239,7 @@ body {
   text-align: center;
   background-color: rgb(237, 237, 237);
   margin: 40px auto;
-  border-radius: 25px;
+  border-radius: 10px;
   max-width: 850px;
 }
 
@@ -292,10 +292,9 @@ body {
   color: #ef744b;
 }
 
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
+@media only screen and (max-width: 500px) {
+  #projects-anchor {
+    height: 20px;
   }
 }
 /* Projects Section */
