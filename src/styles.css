@@ -2,6 +2,7 @@
   --dark-background-color: #1c1d25;
   --dark-hover-color: #202028;
   --dark-active-color: #14151a;
+  --dark-font-color: rgb(199, 199, 199);
 }
 
 html {
@@ -243,10 +244,6 @@ body {
   max-width: 850px;
 }
 
-.projects-title {
-  font-size: 50px;
-}
-
 .project-container {
   display: flex;
   flex-direction: column;
@@ -299,9 +296,71 @@ body {
 }
 /* Projects Section */
 
+/* Footer and Contact Me Section */
 footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  border: solid rgb(82, 82, 82) 1px;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 0 50px 35px 50px;
+}
+
+.contact-me-title {
+  font-size: 35px;
+  margin: 20px 0;
+  margin-bottom: 15px;
+}
+
+.contact-me-email {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-input {
+  width: 400px;
+  height: 25px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: var(--dark-background-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  color: rgb(199, 199, 199);
+}
+
+#message {
+  height: 75px;
+}
+
+.contact-button {
+  width: 180px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: var(--dark-background-color);
+  color: rgb(199, 199, 199);
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact-button:hover {
+  background-color: var(--dark-hover-color);
+}
+.contact-button:active {
+  background-color: var(--dark-active-color);
 }
