@@ -352,15 +352,25 @@ footer {
   width: 180px;
   height: 38px;
   border-radius: 8px;
-  background-color: var(--dark-background-color);
-  color: rgb(199, 199, 199);
+  background-color: white;
+  color: black;
   font-family: inherit;
   font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
 }
 .contact-button:hover {
-  background-color: var(--dark-hover-color);
+  background-color: rgb(220, 220, 220);
 }
 .contact-button:active {
-  background-color: var(--dark-active-color);
+  background-color: rgb(199, 199, 199);
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    padding: 0 25px 16px 25px;
+  }
+  .contact-input {
+    width: 70vw;
+  }
 }
