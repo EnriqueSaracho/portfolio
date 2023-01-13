@@ -314,14 +314,14 @@ footer {
 
 .contact-me-title {
   font-size: 35px;
-  margin: 20px 0;
+  margin: 30px 0;
   margin-bottom: 15px;
 }
 
-.contact-me-email {
+/* .contact-me-email {
   margin-top: 0;
   margin-bottom: 30px;
-}
+} */
 
 .contact-form {
   display: flex;
