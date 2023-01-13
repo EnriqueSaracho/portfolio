@@ -374,3 +374,41 @@ footer {
     width: 70vw;
   }
 }
+
+.thanks-body {
+  background-color: var(--dark-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+.thanks-div {
+  border: solid rgb(82, 82, 82) 1px;
+  border-radius: 10px;
+  padding: 70px;
+  margin-bottom: 150px;
+}
+
+.thanks-msg {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.thanks-a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+.thanks-a:hover {
+  background-color: rgb(220, 220, 220);
+}
+.thanks-a:active {
+  background-color: rgb(199, 199, 199);
+}
