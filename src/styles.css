@@ -13,9 +13,9 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0 0 0 300px;
   transition: 0.3s;
+  background-color: var(--dark-background-color);
   background-image: url("images/low-poly-grid-haikei.png");
   background-size: 100vw;
-  background-color: var(--dark-background-color);
 }
 
 .custom-shape-divider-top-1673592819 {
@@ -36,6 +36,27 @@ body {
 
 .custom-shape-divider-top-1673592819 .shape-fill {
   fill: #000000;
+}
+
+.custom-shape-divider-bottom-1673595377 {
+  position: relative;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673595377 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1673595377 .shape-fill {
+  fill: black;
 }
 
 /* Navigation bars */
