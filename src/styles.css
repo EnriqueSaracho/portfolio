@@ -18,6 +18,7 @@ body {
   background-color: var(--dark-background-color);
   background-image: url("images/low-poly-grid-dark.svg");
   background-size: 100vw;
+  background-attachment: fixed;
 }
 
 main {
