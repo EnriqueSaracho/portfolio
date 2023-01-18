@@ -16,49 +16,12 @@ body {
   margin: 0 0 0 300px;
   transition: 0.3s;
   background-color: var(--dark-background-color);
-  background-image: url("images/low-poly-grid-haikei.png");
+  background-image: url("images/low-poly-grid-dark.svg");
   background-size: 100vw;
 }
 
-.custom-shape-divider-top-1673592819 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1673592819 svg {
+main {
   position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 115px;
-}
-
-.custom-shape-divider-top-1673592819 .shape-fill {
-  fill: #000000;
-}
-
-.custom-shape-divider-bottom-1673595377 {
-  position: relative;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1673595377 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 50px;
-}
-
-.custom-shape-divider-bottom-1673595377 .shape-fill {
-  fill: black;
 }
 
 /* Navigation bars */
@@ -230,7 +193,6 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  /* background-color: var(--dark-background-color); */
   color: white;
   font-size: 40px;
 }
@@ -316,6 +278,7 @@ body {
   text-align: center;
   background-color: rgb(237, 237, 237);
   margin: 40px auto;
+  margin-bottom: 200px;
   border-radius: 10px;
   max-width: 850px;
 }
@@ -373,6 +336,30 @@ body {
 /* Projects Section */
 
 /* Footer and Contact Me Section */
+.divider-div {
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1674076205 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1674076205 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1674076205 .shape-fill {
+  fill: #000000;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -445,9 +432,13 @@ footer {
 @media only screen and (max-width: 600px) {
   .contact {
     padding: 0 25px 16px 25px;
+    margin: 100px;
   }
   .contact-input {
     width: 70vw;
+  }
+  .custom-shape-divider-bottom-1674076205 svg {
+    height: 50px;
   }
 }
 
