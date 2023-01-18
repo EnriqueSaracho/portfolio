@@ -3,6 +3,8 @@
   --dark-hover-color: #202028;
   --dark-active-color: #14151a;
   --dark-font-color: rgb(199, 199, 199);
+  --section-bgcolor: rgb(237, 237, 237);
+  --card-bgcolor: white;
 }
 
 html {
@@ -271,6 +273,37 @@ body {
   }
 }
 /* Hero Section */
+
+/* Skills Section */
+.skills {
+  background-color: var(--section-bgcolor);
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 810px;
+  border-radius: 10px;
+}
+
+.skill-type {
+  background-color: var(--card-bgcolor);
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#fe-skills {
+  margin-right: 20px;
+}
+
+.skill-title {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.skill-list {
+  list-style-type: none;padding: 0;
+}
+/* Skills Section */
 
 /* Projects Section */
 #projects-anchor {
