@@ -6,6 +6,7 @@ const secondaryNavBar = document.getElementById("secondary-nav-bar");
 const secondaryHamburgerButton = document.getElementById("secondary-hamburger");
 let secondaryFlag = 0;
 const secondaryNavLogoBtn = document.getElementById("secondary-nav-logo");
+const secondarySkillsBtn = document.getElementById("secondary-skills");
 const secondaryProjectsBtn = document.getElementById("secondary-projects");
 const secondaryContactMeBtn = document.getElementById("secondary-contact-me");
 
@@ -42,5 +43,6 @@ function toggleNavBarOption() {
 primaryHamburgerButton.addEventListener("click", togglePrimaryButton);
 secondaryHamburgerButton.addEventListener("click", toggleSecondaryButton);
 secondaryNavLogoBtn.addEventListener("click", toggleNavBarOption);
+secondarySkillsBtn.addEventListener('click', toggleNavBarOption)
 secondaryProjectsBtn.addEventListener("click", toggleNavBarOption);
 secondaryContactMeBtn.addEventListener("click", toggleNavBarOption);

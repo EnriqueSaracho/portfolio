@@ -142,6 +142,10 @@ main {
   height: 7vh;
 }
 
+.anchor {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 1000px) {
   html,
   body {
@@ -191,6 +195,11 @@ main {
 /* Navigation Bars */
 
 /* Hero Section */
+.hero-anchor {
+  position: relative;
+  bottom: 50px;
+}
+
 .hero {
   height: 100vh;
   color: white;
@@ -240,7 +249,7 @@ main {
 .skills {
   background-color: var(--section-bgcolor);
   display: flex;
-  margin: 40px auto;
+  margin: 40px auto 0 auto;
   padding: 20px;
   max-width: 810px;
   border-radius: 10px;
@@ -265,13 +274,19 @@ main {
 .skill-list {
   list-style-type: none;padding: 0;
 }
+
+@media only screen and (max-width: 500px) {
+  .skills {
+    margin: 0 auto 0 auto;
+  }
+  #skills-anchor {
+    position: relative;
+    bottom: 70px;
+  }
+}
 /* Skills Section */
 
 /* Projects Section */
-#projects-anchor {
-  display: block;
-}
-
 .projects {
   display: flex;
   flex-direction: column;
@@ -329,8 +344,13 @@ main {
 }
 
 @media only screen and (max-width: 500px) {
+  #projects {
+    margin: 20px auto 200px auto;
+  }
+
   #projects-anchor {
-    height: 20px;
+    position: relative;
+    bottom: 70px;
   }
 }
 /* Projects Section */
@@ -429,10 +449,10 @@ footer {
   background-color: rgb(199, 199, 199);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .contact {
     padding: 0 25px 16px 25px;
-    margin: 100px;
+    margin-bottom: 300px;
   }
   .contact-input {
     width: 70vw;
