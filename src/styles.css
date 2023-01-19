@@ -1,10 +1,19 @@
 :root {
-  --dark-background-color: #1c1d25;
-  --dark-hover-color: #202028;
-  --dark-active-color: #14151a;
-  --dark-font-color: rgb(199, 199, 199);
-  --section-bgcolor: rgb(237, 237, 237);
-  --card-bgcolor: white;
+  /* #1c1d25 dark background color*/
+   /*#ededed light section background color  */
+  --dark-bg: #000000;
+  --dark-alt-bg: #ffffff;
+  --dark-hover: #202028;
+  --dark-active: #14151a;
+  --dark-alt-font: #000000;
+  --dark-font: #ffffff;
+  --dark-section-bg: transparent;
+  --dark-card-bg: black;
+  --dark-border: #80808059;
+  --dark-input: #1c1d25;
+  --dark-placeholder: #c7c7c7;
+  --dark-submit-hover: #dcdcdc;
+  --dark-submit-active: #c7c7c7;
 }
 
 html {
@@ -15,7 +24,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0 0 0 300px;
   transition: 0.3s;
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bg);
   background-image: url("images/low-poly-grid-dark.svg");
   background-size: 100vw;
   background-attachment: fixed;
@@ -27,7 +36,7 @@ main {
 
 /* Navigation bars */
 .nav-bar {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bg);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
@@ -47,24 +56,25 @@ main {
 
 #secondary-nav-bar {
   display: none;
+  background-color: var(--dark-bg);
 }
 
 .nav-logo {
   font-family: "Source Code Pro", monospace;
   font-size: 50px;
-  color: white;
+  color: var(--dark-font);
   margin-top: 30px;
   padding: 10px;
   transition: 0.3s;
   text-decoration: none;
 }
 .nav-logo:hover {
-  color: black;
-  background-color: white;
+  color: var(--dark-alt-font);
+  background-color: var(--dark-alt-bg);
 }
 .nav-logo:active {
   color: blue;
-  background-color: white;
+  background-color: var(--dark-alt-bg);
   transition: 0s;
 }
 
@@ -90,7 +100,7 @@ main {
 
 .nav-list > li > a {
   text-decoration: none;
-  color: white;
+  color: var(--dark-font);
   height: 145px;
   display: flex;
   align-items: center;
@@ -99,11 +109,11 @@ main {
 }
 
 .nav-list > li > a:hover {
-  background-color: var(--dark-hover-color);
+  background-color: var(--dark-hover);
 }
 
 .nav-list > li > a:active {
-  background-color: var(--dark-active-color);
+  background-color: var(--dark-active);
 }
 
 .socials {
@@ -120,8 +130,8 @@ main {
   height: 50px;
   width: 50px;
   border: none;
-  color: white;
-  background-color: var(--dark-background-color);
+  color: var(--dark-font);
+  background-color: var(--dark-bg);
 }
 
 .hamburger:hover {
@@ -129,7 +139,7 @@ main {
 }
 
 .hamburger:active {
-  background-color: var(--dark-active-color);
+  background-color: var(--dark-active);
 }
 
 #primary-hamburger {
@@ -203,7 +213,7 @@ main {
 
 .hero {
   height: 100vh;
-  color: white;
+  color: var(--dark-font);
   font-size: 40px;
 }
 
@@ -248,16 +258,18 @@ main {
 
 /* Skills Section */
 .skills {
-  background-color: var(--section-bgcolor);
+  color: var(--dark-font);
+  background-color: var(--dark-section-bg);
   display: flex;
   margin: 40px auto 0 auto;
   padding: 20px;
   max-width: 810px;
   border-radius: 10px;
+  border: 1px solid var(--dark-border);
 }
 
 .skill-type {
-  background-color: var(--card-bgcolor);
+  background-color: var(--dark-card-bg);
   border-radius: 10px;
   width: 100%;
   text-align: center;
@@ -273,7 +285,8 @@ main {
 }
 
 .skill-list {
-  list-style-type: none;padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 @media only screen and (max-width: 500px) {
@@ -289,13 +302,15 @@ main {
 
 /* Projects Section */
 .projects {
+  color: var(--dark-font);
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(237, 237, 237);
+  background-color: var(--dark-section-bg);
   margin: 40px auto;
   margin-bottom: 200px;
   border-radius: 10px;
+  border: 1px solid var(--dark-border);
   max-width: 850px;
 }
 
@@ -309,7 +324,7 @@ main {
   height: 500px;
   width: auto;
   margin: 20px;
-  background-color: white;
+  background-color: var(--dark-card-bg);
   border-radius: 10px;
 }
 
@@ -337,11 +352,6 @@ main {
 .project-card > hr {
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.project-link {
-  text-decoration: none;
-  color: #ef744b;
 }
 
 @media only screen and (max-width: 500px) {
@@ -382,15 +392,15 @@ main {
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--dark-font);
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .contact {
-  border: solid rgb(82, 82, 82) 1px;
+  border: solid var(--dark-border) 1px;
   border-radius: 10px;
   margin: 50px auto;
   padding: 0 50px 35px 50px;
@@ -401,11 +411,6 @@ footer {
   margin: 30px 0;
   margin-bottom: 15px;
 }
-
-/* .contact-me-email {
-  margin-top: 0;
-  margin-bottom: 30px;
-} */
 
 .contact-form {
   display: flex;
@@ -420,12 +425,12 @@ footer {
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-input);
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   resize: none;
   outline: none;
-  color: rgb(199, 199, 199);
+  color: var(--dark-placeholder);
 }
 
 #message {
@@ -436,18 +441,18 @@ footer {
   width: 180px;
   height: 38px;
   border-radius: 8px;
-  background-color: white;
-  color: black;
+  background-color: var(--dark-alt-bg);
+  color: var(--dark-alt-font);
   font-family: inherit;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
 }
 .contact-button:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: var(--dark-submit-hover);
 }
 .contact-button:active {
-  background-color: rgb(199, 199, 199);
+  background-color: var(--dark-submit-active);
 }
 
 @media only screen and (max-width: 500px) {
@@ -464,11 +469,12 @@ footer {
 }
 
 .thanks-body {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bg);
+  background-image: url(../src/images/low-poly-grid-dark.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--dark-font);
   text-align: center;
   height: 100vh;
   justify-content: center;
@@ -476,7 +482,7 @@ footer {
 }
 
 .thanks-div {
-  border: solid rgb(82, 82, 82) 1px;
+  border: solid var(--dark-border) 1px;
   border-radius: 10px;
   padding: 70px;
   margin-bottom: 150px;
@@ -489,14 +495,14 @@ footer {
 
 .thanks-a {
   text-decoration: none;
-  color: black;
-  background-color: white;
+  color: var(--dark-alt-font);
+  background-color: var(--dark-alt-bg);
   padding: 12px;
   border-radius: 8px;
 }
 .thanks-a:hover {
-  background-color: rgb(220, 220, 220);
+  background-color: var(--dark-submit-hover);
 }
 .thanks-a:active {
-  background-color: rgb(199, 199, 199);
+  background-color: var(--dark-submit-active);
 }
