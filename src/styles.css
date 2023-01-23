@@ -282,12 +282,13 @@ main {
 
 .skill-title {
   margin: 20px 0;
+  padding: 0 6px;
   font-size: 20px;
 }
 
 .skill-list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 6px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -343,10 +344,12 @@ main {
 
 .project-title {
   font-size: 25px;
+  padding: 0 12px;
 }
 
 .project-subtext {
   margin: 0;
+  padding: 0 12px;
   font-size: 25px;
   font-weight: 300;
 }
