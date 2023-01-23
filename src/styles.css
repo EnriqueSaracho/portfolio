@@ -8,7 +8,7 @@
   --dark-alt-font: #000000;
   --dark-font: #ffffff;
   --dark-section-bg: transparent;
-  --dark-card-bg: black;
+  --dark-card-bg: #1c1d25;
   --dark-border: #80808059;
   --dark-input: #1c1d25;
   --dark-placeholder: #c7c7c7;
@@ -271,6 +271,7 @@ main {
 .skill-type {
   background-color: var(--dark-card-bg);
   border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   text-align: center;
 }
@@ -326,6 +327,7 @@ main {
   margin: 20px;
   background-color: var(--dark-card-bg);
   border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .project-card:hover {
