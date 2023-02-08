@@ -1,6 +1,6 @@
 :root {
   /* #1c1d25 dark background color*/
-   /*#ededed light section background color  */
+  /*#ededed light section background color  */
   --dark-bg: #000000;
   --dark-alt-bg: #ffffff;
   --dark-hover: #202028;
@@ -349,8 +349,8 @@ main {
 
 .project-subtext {
   margin: 0;
-  padding: 0 12px;
-  font-size: 25px;
+  padding: 0 20px;
+  font-size: 20px;
   font-weight: 300;
 }
 
