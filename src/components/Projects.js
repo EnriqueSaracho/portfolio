@@ -18,7 +18,7 @@ export default function Projects() {
           field="Full-Stack Web development"
           desc={"A video game catalog with cool features."}
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
-          path="/portfolio_03/game-list"
+          path="/portfolio/game-list"
         />
         <Project
           img={require("../images/checkers/checkers.jpg")}
@@ -26,7 +26,7 @@ export default function Projects() {
           field="Front-End Web development"
           desc="Web Development I course project. It's a website for a fictional pizza place called Checkers!"
           skills={["HTML", "CSS", "JavaScript"]}
-          path="/portfolio_03/checkers"
+          path="/portfolio/checkers"
         />
         <Project
           img={require("../images/calculator/calculator.jpg")}
@@ -34,7 +34,7 @@ export default function Projects() {
           field="Front-End Web development"
           desc="This calculator keeps track of operations and is able to modify them as needed."
           skills={["HTML", "CSS", "JavaScript"]}
-          path="/portfolio_03/calculator"
+          path="/portfolio/calculator"
         />
         <Project
           img={require("../images/portfolio/portfolio.jpg")}
@@ -42,7 +42,7 @@ export default function Projects() {
           field="Front-End Web development"
           desc="This Portfolio! Simple and flexible with project pages and links."
           skills={["React", "CSS"]}
-          path="/portfolio_03/portfolio"
+          path="/portfolio/portfolio"
         />
       </div>
     </div>

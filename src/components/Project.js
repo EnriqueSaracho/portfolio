@@ -88,7 +88,7 @@ function ProjectPage({
       <button
         className="btn go-back"
         onClick={() => {
-          navigate("/portfolio_03");
+          navigate("/portfolio");
         }}
       >
         <BsArrowReturnLeft />
@@ -172,7 +172,7 @@ function ProjectPage({
       <button
         className="btn go-back"
         onClick={() => {
-          navigate("/portfolio_03");
+          navigate("/portfolio");
         }}
       >
         <BsArrowReturnLeft />
