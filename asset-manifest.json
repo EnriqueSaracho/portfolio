@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.822b60b5.css",
+    "main.js": "/portfolio/static/js/main.d82c447c.js",
+    "static/media/game-list-search.jpg": "/portfolio/static/media/game-list-search.69f16e09f17bd3f76e12.jpg",
+    "static/media/game-list-home.jpg": "/portfolio/static/media/game-list-home.f733c74bc4b6ca31057c.jpg",
+    "static/media/game-list-sort.jpg": "/portfolio/static/media/game-list-sort.b3f11be926940bfc63b1.jpg",
+    "static/media/checkers-home.jpg": "/portfolio/static/media/checkers-home.6b10ba4dc8bdd40928c1.jpg",
+    "static/media/checkers-menu.jpg": "/portfolio/static/media/checkers-menu.8f5c7af7700f5bda19d4.jpg",
+    "static/media/portfolio-projects.jpg": "/portfolio/static/media/portfolio-projects.4da12de5d3f5eedde018.jpg",
+    "static/media/game-list-edit3.jpg": "/portfolio/static/media/game-list-edit3.2e6d91f96a811f62ee0a.jpg",
+    "static/media/game-list-game-info.jpg": "/portfolio/static/media/game-list-game-info.6b9e8a912884689ae7d1.jpg",
+    "static/media/game-list-edit2.jpg": "/portfolio/static/media/game-list-edit2.954e39a11dfec0f188eb.jpg",
+    "static/media/game-list-edit.jpg": "/portfolio/static/media/game-list-edit.e6777e62ecfc2d4e1a9c.jpg",
+    "static/media/game-list-add.jpg": "/portfolio/static/media/game-list-add.9edef52e7e8f491b6441.jpg",
+    "static/media/checkers-cart.jpg": "/portfolio/static/media/checkers-cart.29aa4ea699e9c9ac2e1a.jpg",
+    "static/media/checkers-acc.jpg": "/portfolio/static/media/checkers-acc.92d90edeaf2ca64a94e4.jpg",
+    "static/media/game-list.jpg": "/portfolio/static/media/game-list.c9e5255d3988a0bafbe1.jpg",
+    "static/media/calculator-comp2.jpg": "/portfolio/static/media/calculator-comp2.8e438f4006d31e6e354c.jpg",
+    "static/media/portfolio-about.jpg": "/portfolio/static/media/portfolio-about.ff81c57dc16aac8b72e9.jpg",
+    "static/media/calculator.jpg": "/portfolio/static/media/calculator.4bbc84de9d6a74b91fa0.jpg",
+    "static/media/calculator-comp3.jpg": "/portfolio/static/media/calculator-comp3.738b65960c735d545f03.jpg",
+    "static/media/portfolio-skills.jpg": "/portfolio/static/media/portfolio-skills.f63bb861333cc40e1e8c.jpg",
+    "static/media/calculator-comp.jpg": "/portfolio/static/media/calculator-comp.9c71327a1987eac9c1a8.jpg",
+    "static/media/checkers.jpg": "/portfolio/static/media/checkers.46f627629c6232097c73.jpg",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.1fe5d471d7e9f8f0eb2e.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.822b60b5.css.map": "/portfolio/static/css/main.822b60b5.css.map",
+    "main.d82c447c.js.map": "/portfolio/static/js/main.d82c447c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.822b60b5.css",
+    "static/js/main.d82c447c.js"
+  ]
+}
