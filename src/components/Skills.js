@@ -33,6 +33,8 @@ export default function Skills() {
         <SkillsIcon name="Git" />
         <SkillsIcon name="GitHub" />
         <SkillsIcon name="Docker" />
+        <SkillsIcon name="Figma" />
+        <SkillsIcon name="Insomnia" />
       </div>
     </div>
   );

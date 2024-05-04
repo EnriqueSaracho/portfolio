@@ -19,6 +19,8 @@ import { FaPython } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { SiInsomnia } from "react-icons/si";
 
 /**
  * SkillsIcon component.
@@ -88,6 +90,12 @@ export default function SkillsIcon({ name }) {
       break;
     case "Docker":
       Icon = FaDocker;
+      break;
+    case "Figma":
+      Icon = FaFigma;
+      break;
+    case "Insomnia":
+      Icon = SiInsomnia;
       break;
     default:
       Icon = AiFillHtml5;
