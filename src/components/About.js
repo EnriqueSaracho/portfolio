@@ -19,7 +19,7 @@ export default function About() {
       {/* Info */}
       <p className="about-text">
         Enrique Saracho Felix <br></br>
-        Industrial Engineering / Computer Science<br></br>
+        Industrial Engineering / Full Stack Software Developer<br></br>
         Vancouver, BC. <br></br>
         enriquesarachofelix@gmail.com <br></br>
         +1 (236) 863-5617
