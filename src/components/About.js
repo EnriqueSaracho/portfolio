@@ -13,7 +13,7 @@ export default function About() {
     <div className="component">
       {/* Title */}
       <h2 className="title">
-        Hi, I'm <span className="name">Kiki</span>.
+        Hi, I'm <span className="name">Enrique</span>.
       </h2>
 
       {/* Info */}

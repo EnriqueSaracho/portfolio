@@ -19,11 +19,13 @@ export default function GameList() {
     <div>
       <Project
         img={images}
-        title="Game List"
-        desc={`This application allows you to save game titles along with useful information such as the series it belongs to, developers, release date, genres, consoles it's available on, and more. On the home page, it sorts them by title, release date, or rating, which you can assign to each game. It's great for creating a list of your favorite games as well as those you wish to play in the future.
+        title="Game Rating App"
+        desc={`This application allows you to save game titles along with useful information such as the series it belongs to, developers, release date, genres, consoles it's available on, and more. It's great for creating a list of your favorite games as well as those you wish to play in the future.
 
-        The app is divided into two parts: the client side and the server side. For the client side, I used Create React App to design the frontend. For the server side, I built the backend with Node.js and Express.js, and used a MongoDB Atlas database to store the information.
+        The app is divided into two parts: the client side and the server side. I used Create React App to build the Front-End, Node.js and Express.js for the Back-End, and a MongoDB Atlas database to store the information.
         
+        I'm currently working on integrating the IGDB's API (video game database) to make the addition of games easier and an account system to allow multiple users to have their own unique lists and ratings. Some features like the searching and sorting system are temporarily disabled.
+
         `}
         btn1={"https://ludi-eight.vercel.app/"}
         btn1Text={"See Web Page"}

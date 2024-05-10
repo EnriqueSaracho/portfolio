@@ -14,7 +14,7 @@ export default function Projects() {
       <div className="projects">
         <Project
           img={require("../images/game-list/game-list.jpg")}
-          title="Game List"
+          title="Game Rating App"
           field="Full-Stack Web development"
           desc={"A video game catalog with cool features."}
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
