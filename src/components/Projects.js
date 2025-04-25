@@ -8,13 +8,13 @@ export default function Projects() {
   return (
     <div className="component container2">
       {/* Title */}
-      <h2 className="title">Projects</h2>
+      <h2 className="title high-light-text">Projects</h2>
 
       {/* Projects list */}
       <div className="projects">
         <Project
-          img={require("../images/game-list/game-list.jpg")}
-          title="Game Rating App"
+          img={require("../images/game-list/ludi-logo_portfolio_thumb.jpg")}
+          title="Ludi / Game Rating App"
           field="Full-Stack Web development"
           desc={"A video game catalog with cool features."}
           skills={["mongoDB", "Express.js", "React", "Node.js"]}

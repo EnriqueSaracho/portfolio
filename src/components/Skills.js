@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <div className="component">
       {/* Title */}
-      <h2 className="title">Skills</h2>
+      <h2 className="title high-light-text">Skills</h2>
 
       {/* Skills */}
       <div className="skills">
