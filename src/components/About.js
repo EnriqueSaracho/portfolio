@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { FaDownload } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 /**
  * About component.
@@ -13,8 +14,36 @@ export default function About() {
     <div className="component">
       {/* Title */}
       <h2 className="title">
-        Hi, I'm <span className="high-light-text">Enrique</span>.
+        Hi, I'm <span className="high-light-text">Enrique</span>
       </h2>
+
+      <div className="typewriter-1">
+        <Typewriter
+          options={{
+            wrapperClassName: "",
+            cursorClassName: "my-custom-cursor",
+            delay: 50,
+            deleteSpeed: 5,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString(
+                'But most people call me <span class="high-light-text">Maximus Decimus Meridius, commander of the Armies of the North, general of the Felix Legions, loyal servant to the true emperor Marcus Aurelius.</span>'
+              )
+              .callFunction(() => {
+                console.log("String typed out!");
+              })
+              .pauseFor(1000)
+              .deleteChars(145)
+              .callFunction(() => {
+                console.log("All strings were deleted");
+              })
+              .pauseFor(500)
+              .typeString(' <span class="high-light-text">Kiki</span> ')
+              .start();
+          }}
+        />
+      </div>
 
       {/* Info */}
       <p className="about-text">
