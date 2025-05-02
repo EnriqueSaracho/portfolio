@@ -21,7 +21,7 @@ export default function About() {
         <Typewriter
           options={{
             wrapperClassName: "",
-            cursorClassName: "my-custom-cursor",
+            cursorClassName: "tw-cursor-1",
             delay: 50,
             deleteSpeed: 5,
           }}
