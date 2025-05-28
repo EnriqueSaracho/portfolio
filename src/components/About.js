@@ -11,7 +11,7 @@ import Typewriter from "typewriter-effect";
  */
 export default function About() {
   return (
-    <div className="component">
+    <div className="about component">
       {/* Title */}
       <h2 className="title">
         Hi, I'm <span className="high-light-text">Enrique</span>
@@ -27,6 +27,7 @@ export default function About() {
           }}
           onInit={(typewriter) => {
             typewriter
+              .pauseFor(2500)
               .typeString(
                 'But most people call me <span class="high-light-text">Maximus Decimus Meridius, commander of the Armies of the North, general of the Felix Legions, loyal servant to the true emperor Marcus Aurelius.</span>'
               )
@@ -39,7 +40,7 @@ export default function About() {
                 console.log("All strings were deleted");
               })
               .pauseFor(500)
-              .typeString(' <span class="high-light-text">Kiki</span> ')
+              .typeString(' <span class="high-light-text">Kiki</span>')
               .start();
           }}
         />

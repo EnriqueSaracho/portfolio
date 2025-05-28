@@ -5,6 +5,7 @@ import Checkers from "./pages/checkers";
 import Portfolio from "./pages/portfolio";
 import GameList from "./pages/game-list";
 import Calculator from "./pages/calculator";
+import Navbar from "./components/Navbar";
 
 /**
  * App page.
@@ -13,6 +14,7 @@ import Calculator from "./pages/calculator";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <Routes>
           {/* Home page */}
