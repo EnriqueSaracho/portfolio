@@ -2,7 +2,6 @@ import React from "react";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import Main from "../components/Main";
 
 /**
  * Home component.
@@ -11,10 +10,9 @@ import Main from "../components/Main";
 export default function Home() {
   return (
     <div className="Home">
-      <Main />
-      <div className="container1">
         <About />
-        <Skills />
+      <div className="container1">
+        {/* <Skills /> */}
       </div>
       <Projects />
     </div>

@@ -11,10 +11,10 @@ import Typewriter from "typewriter-effect";
  */
 export default function About() {
   return (
-    <div className="about component">
+    <div id="about" className="about">
       {/* Title */}
-      <h2 className="title">
-        Hi, I'm <span className="high-light-text">Enrique</span>
+      <h2 className="about-title">
+        Hi! I'm <span className="high-light-text">Enrique Saracho Felix</span>
       </h2>
 
       <div className="typewriter-1">
@@ -22,20 +22,20 @@ export default function About() {
           options={{
             wrapperClassName: "",
             cursorClassName: "tw-cursor-1",
-            delay: 50,
+            delay: 100,
             deleteSpeed: 5,
           }}
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(2500)
+              .pauseFor(1000)
               .typeString(
-                'But most people call me <span class="high-light-text">Maximus Decimus Meridius, commander of the Armies of the North, general of the Felix Legions, loyal servant to the true emperor Marcus Aurelius.</span>'
+                'But most people call me <span class="high-light-text">Maximus Decimus Meridius</span>'
               )
               .callFunction(() => {
                 console.log("String typed out!");
               })
-              .pauseFor(1000)
-              .deleteChars(145)
+              .pauseFor(0)
+              .deleteChars(24)
               .callFunction(() => {
                 console.log("All strings were deleted");
               })
@@ -48,11 +48,8 @@ export default function About() {
 
       {/* Info */}
       <p className="about-text">
-        Enrique Saracho Felix <br></br>
-        Industrial Engineering / Full Stack Software Developer<br></br>
+        Industrial Engineer / Full Stack Software Developer<br></br>
         Vancouver, BC. <br></br>
-        enriquesarachofelix@gmail.com <br></br>
-        +1 (236) 863-5617
       </p>
 
       {/* Curriculum */}
@@ -65,11 +62,10 @@ export default function About() {
       </a> */}
 
       {/* Links to social pages */}
-      <div className="socials">
+      <div className="socials component">
         <a
           href="https://github.com/EnriqueSaracho"
           className="icon-a-tag"
-          target="_blank"
           rel="noreferrer"
           title="GitHub"
         >
@@ -78,7 +74,6 @@ export default function About() {
         <a
           href="https://www.linkedin.com/in/enrique-saracho-felix/"
           className="icon-a-tag"
-          target="_blank"
           rel="noreferrer"
           title="LinkedIn"
         >

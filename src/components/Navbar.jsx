@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Left side */}
-      <div className="navbar__brand">Kiki</div>
+      <a href="/portfolio#about" className="navbar__brand">Kiki</a>
 
       {/* Right side */}
       <ul className="navbar__links">
