@@ -12,9 +12,18 @@ import Typewriter from "typewriter-effect";
 export default function About() {
   return (
     <div id="about" className="about">
+      {/* Profile Image */}
+      <div className="profile-image-container">
+        <img 
+          src={require("../images/profile_image.jpg")} 
+          alt="Enrique Saracho Felix" 
+          className="profile-image"
+        />
+      </div>
+      
       {/* Title */}
       <h2 className="about-title">
-        Hi! I'm <span className="high-light-text">Enrique Saracho Felix</span>
+        Hi! I'm <span className="high-light-text">Enrique</span>
       </h2>
 
       <div className="typewriter-1">
@@ -29,7 +38,7 @@ export default function About() {
             typewriter
               .pauseFor(1000)
               .typeString(
-                'But most people call me <span class="high-light-text">Maximus Decimus Meridius</span>'
+                'But you can call me <span class="high-light-text">Enrique Saracho Felix</span>'
               )
               .callFunction(() => {
                 console.log("String typed out!");

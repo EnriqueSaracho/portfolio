@@ -15,17 +15,19 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-        <Routes>
-          {/* Home page */}
-          <Route path="/portfolio" element={<Home />} />
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            {/* Home page */}
+            <Route path="/portfolio" element={<Home />} />
 
-          {/* Project pages */}
-          <Route path="/portfolio/checkers" element={<Checkers />} />
-          <Route path="/portfolio/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/game-list" element={<GameList />} />
-          <Route path="/portfolio/calculator" element={<Calculator />} />
-        </Routes>
+            {/* Project pages */}
+            <Route path="/portfolio/checkers" element={<Checkers />} />
+            <Route path="/portfolio/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/game-list" element={<GameList />} />
+            <Route path="/portfolio/calculator" element={<Calculator />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
