@@ -36,15 +36,15 @@ export default function About() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(1000)
+              .pauseFor(2000)
               .typeString(
-                'But you can call me <span class="high-light-text">Enrique Saracho Felix</span>'
+                'But you can also call me <span class="high-light-text">Enrique Saracho Felix</span>'
               )
               .callFunction(() => {
                 console.log("String typed out!");
               })
               .pauseFor(0)
-              .deleteChars(24)
+              .deleteChars(21)
               .callFunction(() => {
                 console.log("All strings were deleted");
               })

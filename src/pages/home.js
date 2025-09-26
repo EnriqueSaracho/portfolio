@@ -10,10 +10,7 @@ import Projects from "../components/Projects";
 export default function Home() {
   return (
     <div className="Home">
-        <About />
-      <div className="container1">
-        {/* <Skills /> */}
-      </div>
+      <About />
       <Projects />
     </div>
   );

@@ -6,9 +6,9 @@ import { ProjectThumbnail as Project } from "./Project";
  */
 export default function Projects() {
   return (
-    <div className="container2">
+    <div className="container2" id="projects">
       {/* Title */}
-      <h2 className="title high-light-text">Projects</h2>
+      <h2 className="title">Projects</h2>
 
       {/* Projects list */}
       <div className="projects">

@@ -6,6 +6,8 @@ import Portfolio from "./pages/portfolio";
 import GameList from "./pages/game-list";
 import Calculator from "./pages/calculator";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 /**
  * App page.
@@ -15,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <div className="main-content">
           <Routes>
@@ -28,6 +31,7 @@ function App() {
             <Route path="/portfolio/calculator" element={<Calculator />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </div>
   );
