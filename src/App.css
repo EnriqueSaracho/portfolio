@@ -13,6 +13,9 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* Better mobile webkit support */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 body {
@@ -67,6 +70,24 @@ body::before {
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    /* Force a stable background on mobile */
+    background: #0f1624; /* Fallback solid color */
+    background: linear-gradient(-45deg, #0a0f1a, #0f1419, #0d1117, #0a0e13);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    /* Add these for mobile stability */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Disable or simplify the floating particles on mobile */
+  body::before {
+    display: none;
+  }
+}
+
 .App {
   margin: auto;
 }
@@ -117,6 +138,14 @@ body::before {
   letter-spacing: 0.5px;
   text-decoration: none !important;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Fix for background-clip: text on mobile */
+.navbar__brand,
+.high-light-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Hamburger hidden by default (desktop) */
@@ -294,6 +323,51 @@ body::before {
   min-height: calc(100vh - 84px);
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Mobile-specific project page fixes */
+@media (max-width: 768px) {
+  .main-content {
+    background-color: transparent !important;
+  }
+
+  /* Prevent any inherited background changes */
+  .project-info,
+  .project-info-title {
+    background-color: transparent;
+  }
+}
+
+/* Mobile-specific resets and fixes */
+@media only screen and (max-width: 768px) {
+  /* Prevent iOS zoom on inputs */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+
+  /* Consistent link behavior */
+  a,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  /* Prevent background color shifts */
+  html,
+  body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Ensure navbar stays consistent */
+  .navbar {
+    background-color: rgba(15, 22, 36, 0.8) !important;
+  }
 }
 
 .btn {
@@ -694,6 +768,7 @@ body::before {
   margin: auto;
   display: flex;
   flex-direction: column;
+  background-color: transparent !important;
 }
 
 .project-info-title {
