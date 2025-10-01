@@ -115,6 +115,8 @@ body::before {
   background-image: var(--background-image);
   background-clip: text;
   letter-spacing: 0.5px;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Hamburger hidden by default (desktop) */
@@ -273,6 +275,8 @@ body::before {
   color: var(--contrast);
   font-weight: 500;
   transition: color 0.25s ease;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar__links li a:hover,
