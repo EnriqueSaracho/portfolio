@@ -88,6 +88,12 @@ body::before {
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  body::before {
+    display: none;
+  }
+}
+
 .App {
   margin: auto;
 }
