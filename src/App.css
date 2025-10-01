@@ -418,31 +418,6 @@ body::before {
 .Home {
 }
 
-.component {
-  margin: 20px;
-  padding: 20px;
-  background: transparent;
-  position: relative;
-  border-radius: 8px;
-}
-
-.component::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 8px;
-  padding: 2px;
-  background: linear-gradient(90deg, #945dd6, #6978d1 55%, #13adc7);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  z-index: -1;
-}
-
 .title {
   padding: 15px;
   text-align: center;
@@ -531,10 +506,30 @@ body::before {
 }
 
 .socials {
-  padding: 20px;
   display: flex;
   justify-content: space-around;
-  /* margin: 2rem auto; */
+  margin: 20px;
+  padding: 20px;
+  background: transparent;
+  position: relative;
+  border-radius: 8px;
+}
+
+.socials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(90deg, #945dd6, #6978d1 55%, #13adc7);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  z-index: -1;
 }
 
 .icon-a-tag {
@@ -568,6 +563,12 @@ body::before {
 
 .social-icon {
   font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .icon-a-tag {
+    padding: 0 1rem;
+  }
 }
 
 /* Skills component */
