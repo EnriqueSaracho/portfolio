@@ -753,6 +753,11 @@ body::before {
   .project-description {
     height: fit-content;
   }
+
+  .project-tech {
+    align-items: start;
+    flex-shrink: 1;
+  }
 }
 
 .project-field {
