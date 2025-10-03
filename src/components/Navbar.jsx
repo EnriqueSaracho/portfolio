@@ -67,16 +67,33 @@ const Navbar = () => {
     }
   };
 
+  // Handle brand/home click (scroll to top or navigate to home)
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    setMenuOpen(false);
+
+    if (location.pathname === "/portfolio") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/portfolio");
+    }
+  };
+
   return (
     <nav className={`navbar ${isVisible ? "navbar--visible" : "navbar--hidden"}`}>
       <div className="navbar__container">
         {/* Left side */}
-        <a href="/portfolio#about" className="navbar__brand" onClick={handleBrandClick}>
+        <a href="/portfolio#about" className="navbar__brand" onClick={handleHomeClick}>
           Kiki
         </a>
 
         {/* Right side */}
         <ul className="navbar__links">
+          <li>
+            <a href="/portfolio" onClick={handleHomeClick}>
+              Home
+            </a>
+          </li>
           <li>
             <a href="/portfolio#projects" onClick={(e) => handleSectionClick(e, "projects")}>
               Projects
@@ -101,6 +118,11 @@ const Navbar = () => {
         {/* Full screen overlay menu */}
         <div className={`navbar__overlay ${menuOpen ? "open" : ""}`}>
           <ul className="navbar__overlay-links">
+            <li>
+              <a href="/portfolio" onClick={handleHomeClick}>
+                Home
+              </a>
+            </li>
             <li>
               <a href="/portfolio#projects" onClick={(e) => handleSectionClick(e, "projects")}>
                 Projects

@@ -136,6 +136,7 @@ body::before {
 
 /* Brand / logo text */
 .navbar__brand {
+  border-radius: 4px;
   font-size: 1.6rem;
   font-weight: 600;
   color: transparent;
@@ -144,6 +145,16 @@ body::before {
   letter-spacing: 0.5px;
   text-decoration: none !important;
   -webkit-tap-highlight-color: transparent;
+}
+
+.navbar__brand:focus {
+  outline: 2px solid var(--highlight);
+  outline-offset: 4px;
+}
+
+.navbar__brand:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 4px;
 }
 
 /* Fix for background-clip: text on mobile */
@@ -165,6 +176,12 @@ body::before {
   position: relative;
   z-index: 1001;
   padding: 0;
+}
+
+.navbar__toggle:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .navbar__toggle-line {
@@ -216,7 +233,7 @@ body::before {
   background: rgba(15, 22, 36, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -317,6 +334,13 @@ body::before {
 .navbar__links li a:hover,
 .navbar__links li a:focus {
   color: var(--highlight);
+}
+
+.navbar__links li a:focus-visible,
+.navbar__overlay-links li a:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .main {
@@ -656,7 +680,6 @@ body::before {
   height: 180px;
   object-fit: cover;
 }
-
 
 .project-content {
   padding: 15px 25px;
@@ -1347,6 +1370,16 @@ body::before {
 
   .navbar__toggle {
     display: block;
+  }
+
+  .navbar__overlay {
+    display: flex;
+  }
+
+  .navbar__overlay.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 }
 
