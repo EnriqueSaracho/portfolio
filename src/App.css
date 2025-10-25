@@ -845,6 +845,9 @@ body::before {
 
 .project-page {
   max-width: 1200px;
+  /* max-height: calc(100vh - 84px); */
+  /* max-height: calc(100vh - 100px); */
+  height: calc(100vh - 100px);
   padding: 0 12px;
   margin: auto;
   display: flex;
@@ -855,6 +858,7 @@ body::before {
 .project-info-title {
   text-align: center;
   padding: 10px;
+  flex-shrink: 0;
   background: linear-gradient(135deg, rgba(148, 93, 214, 0.15), rgba(105, 120, 209, 0.1), rgba(19, 173, 199, 0.15));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -866,40 +870,25 @@ body::before {
   display: flex;
   align-items: center;
   padding-top: 20px;
+  flex: 1;
+  min-height: 0;
 }
 
 .project-page-img-container {
-  width: 60%;
-  margin-bottom: 10px;
+  flex: 2;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-page-img-slider-wrapper {
   position: relative;
   overflow: visible;
   padding-bottom: 30px; /* Make space for the dots */
-}
-
-.project-page-img-slider {
+  flex: 1;
   display: flex;
-  aspect-ratio: 10/8;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.project-page-img-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.project-page-img {
-  flex: 1 0 100%;
-  width: 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
+  flex-direction: column;
+  min-height: 0;
 }
 
 /* Navigation arrows */
@@ -942,6 +931,56 @@ body::before {
 
 .slider-nav-next {
   right: 15px;
+}
+
+.project-page-img-slider {
+  display: flex;
+  aspect-ratio: 3/2;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); */
+  /* border-radius: 5px; */
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.project-page-img-slider::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .project-page {
+    padding: 0;
+    height: auto;
+  }
+
+  .project-info-title {
+    border-radius: 0;
+    padding: 12px 10px;
+  }
+
+  .project-info {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .project-page-img-slider {
+    border-radius: 0;
+    /* aspect-ratio: 4/5; */
+  }
+
+  .slider-nav-btn {
+    display: none;
+  }
+}
+
+.project-page-img {
+  border-radius: 5px;
+  flex: 1 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  object-fit: contain;
 }
 
 /* Dot navigation */
@@ -1061,6 +1100,17 @@ body::before {
   scrollbar-color: rgba(148, 93, 214, 0.6) rgba(148, 93, 214, 0.1);
 }
 
+@media (max-width: 768px) {
+  .project-info-text {
+    padding: 0 18px;
+  }
+
+  .project-info-text-description {
+    max-height: none;
+    padding-right: 0;
+  }
+}
+
 .project-info-btns {
   display: flex;
   flex-direction: column;
@@ -1079,7 +1129,7 @@ body::before {
 /* Responsive button layout */
 @media only screen and (min-width: 768px) {
   .project-info-btns {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     gap: 16px;
   }
@@ -1087,41 +1137,6 @@ body::before {
   .project-info-btns a {
     flex: 0 0 auto;
     max-width: 180px;
-  }
-}
-
-/* Media queries */
-@media only screen and (max-width: 1380px) {
-  .container2 {
-    /* max-width: px; */
-  }
-}
-
-@media only screen and (max-width: 1070px) {
-  .container2 {
-    /* max-width: 662px; */
-  }
-
-  .project-page {
-    width: 850px;
-  }
-
-  .project-info {
-    padding: 12px;
-  }
-
-  .project-info-text-description {
-    max-height: 250px;
-  }
-}
-
-@media only screen and (max-width: 910px) {
-  .project-page {
-    width: 700px;
-  }
-
-  .project-info {
-    padding: 10px;
   }
 }
 
@@ -1142,14 +1157,6 @@ body::before {
 
   .project-skills {
     margin-top: 10px;
-  }
-
-  .project-page {
-    width: 80%;
-  }
-  .project-info {
-    flex-direction: column;
-    padding: 20px;
   }
   .project-page-img-container {
     width: 100%;
@@ -1184,31 +1191,9 @@ body::before {
   }
 }
 
-@media only screen and (max-width: 530px) {
-  .project-page {
-    width: 86%;
-  }
-  .project-info {
-    padding: 16px;
-  }
-  .project-info-text {
-    margin-top: 8px;
-  }
-}
-
 @media only screen and (max-width: 420px) {
   .container2 {
     max-width: 100%;
-  }
-
-  .project-page {
-    width: 92%;
-  }
-  .project-info {
-    padding: 12px;
-  }
-  .project-info-text {
-    margin-top: 6px;
   }
 }
 
