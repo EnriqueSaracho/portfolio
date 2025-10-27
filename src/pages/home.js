@@ -1,7 +1,7 @@
 import React from "react";
 import About from "../components/About";
-import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Experiences from "../components/Experiences";
 
 /**
  * Home component.
@@ -12,6 +12,7 @@ export default function Home() {
     <div className="Home">
       <About />
       <Projects />
+      <Experiences />
     </div>
   );
 }

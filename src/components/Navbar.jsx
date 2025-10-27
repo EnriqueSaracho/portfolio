@@ -80,10 +80,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isVisible ? "navbar--visible" : "navbar--hidden"}`}>
+    <nav
+      className={`navbar ${isVisible ? "navbar--visible" : "navbar--hidden"}`}
+    >
       <div className="navbar__container">
         {/* Left side */}
-        <a href="/portfolio#about" className="navbar__brand" onClick={handleHomeClick}>
+        <a
+          href="/portfolio#about"
+          className="navbar__brand"
+          onClick={handleHomeClick}
+        >
           Kiki
         </a>
 
@@ -95,21 +101,33 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/portfolio#projects" onClick={(e) => handleSectionClick(e, "projects")}>
+            <a
+              href="/portfolio#projects"
+              onClick={(e) => handleSectionClick(e, "projects")}
+            >
               Projects
             </a>
           </li>
           {/* Add more sections here as needed */}
-          {/* <li><a href="/portfolio#about" onClick={(e) => handleSectionClick(e, 'about')}>About</a></li> */}
-          {/* <li><a href="/portfolio#skills" onClick={(e) => handleSectionClick(e, 'skills')}>Skills</a></li> */}
-          {/* <li><a href="/portfolio#contact" onClick={(e) => handleSectionClick(e, 'contact')}>Contact</a></li> */}
+          <li>
+            <a
+              href="/portfolio#experience"
+              onClick={(e) => handleSectionClick(e, "experience")}
+            >
+              Experience
+            </a>
+          </li>
         </ul>
 
         {/* Hamburger button only < 768px */}
         {/* <button className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </button> */}
-        <button className={`navbar__toggle ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+        <button
+          className={`navbar__toggle ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
           <span className="navbar__toggle-line"></span>
           <span className="navbar__toggle-line"></span>
           <span className="navbar__toggle-line"></span>
@@ -124,15 +142,21 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/portfolio#projects" onClick={(e) => handleSectionClick(e, "projects")}>
+              <a
+                href="/portfolio#projects"
+                onClick={(e) => handleSectionClick(e, "projects")}
+              >
                 Projects
               </a>
             </li>
-            {/* <li>
-            <a href="/portfolio#about" onClick={(e) => handleSectionClick(e, "about")}>
-            About
-            </a>
-          </li> */}
+            <li>
+              <a
+                href="/portfolio#experience"
+                onClick={(e) => handleSectionClick(e, "experience")}
+              >
+                Experience
+              </a>
+            </li>
             {/* <li>
             <a href="/portfolio#skills" onClick={(e) => handleSectionClick(e, "skills")}>
               Skills
