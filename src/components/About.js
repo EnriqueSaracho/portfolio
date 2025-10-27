@@ -14,13 +14,13 @@ export default function About() {
     <div id="about" className="about">
       {/* Profile Image */}
       <div className="profile-image-container">
-        <img 
-          src={require("../images/profile_image.jpg")} 
-          alt="Enrique Saracho Felix" 
+        <img
+          src={require("../images/profile_image.jpg")}
+          alt="Enrique Saracho Felix"
           className="profile-image"
         />
       </div>
-      
+
       {/* Title */}
       <h2 className="about-title">
         Hi! I'm <span className="high-light-text">Enrique</span>
@@ -38,18 +38,18 @@ export default function About() {
             typewriter
               .pauseFor(2000)
               .typeString(
-                'But you can also call me <span class="high-light-text">Enrique Saracho Felix</span>'
+                'I build <span class="high-light-text">web applications</span>'
               )
-              .callFunction(() => {
-                console.log("String typed out!");
-              })
-              .pauseFor(0)
-              .deleteChars(21)
-              .callFunction(() => {
-                console.log("All strings were deleted");
-              })
-              .pauseFor(500)
-              .typeString(' <span class="high-light-text">Kiki</span>')
+              .pauseFor(1000)
+              .deleteChars(16)
+              .typeString(
+                '<span class="high-light-text">full-stack solutions</span>'
+              )
+              .pauseFor(1000)
+              .deleteChars(20)
+              .typeString(
+                '<span class="high-light-text">meaningful digital experiences</span>'
+              )
               .start();
           }}
         />
