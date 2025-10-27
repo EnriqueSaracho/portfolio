@@ -73,8 +73,6 @@ export default function Experiences() {
           desc2={
             "Evaluated model outputs based on instruction adherence, truthfulness, completeness, relevance, safety, and stylistic quality, contributing to consistent model improvements across key performance areas."
           }
-          linkTitle={"Tree of Life"}
-          url={"https://devpost.com/software/tree-of-life-icv3oy"}
         />
       </div>
     </div>
